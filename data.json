@@ -3,7 +3,6 @@
     
     "menu": {
         "About":"/about.html",
-        "Projects":"/",
         "Contact":"/contact.html"
     },
 
