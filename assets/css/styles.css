@@ -61,6 +61,9 @@ your background is light. */
 .android-card-container .mdl-card__media img {
     height: 167px;
 }
+.android-card-container .mdl-card a {
+    text-decoration: none;
+}
 .android-card-container .mdl-card__media p {
     height: 167px;
     margin: 0;

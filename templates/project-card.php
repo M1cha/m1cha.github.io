@@ -1,13 +1,15 @@
 <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
-    <?php if (isset($image)): ?>
-        <div class="mdl-card__media" style="background-color:<?=$this->e(isset($headercolor)?$headercolor:"white")?>">
-            <img src="<?=$this->e($image)?>">
-        </div>
-    <?php else: ?>
-        <div class="mdl-card__media" style="background-color:#000; color:white;">
-            <p><?=$this->e($headertext)?></p>
-        </div>
-    <?php endif ?>
+    <a href="<?="projects/".makeurlname($category)."/".makeurlname($title).".html"?>">
+        <?php if (isset($image)): ?>
+            <div class="mdl-card__media" style="background-color:<?=$this->e(isset($headercolor)?$headercolor:"white")?>">
+                <img src="<?=$this->e($image)?>">
+            </div>
+        <?php else: ?>
+            <div class="mdl-card__media" style="background-color:#000; color:white;">
+                <p><?=$this->e($headertext)?></p>
+            </div>
+        <?php endif ?>
+    </a>
     <div class="mdl-card__title">
         <h4 class="mdl-card__title-text"><?=$this->e($title)?></h4>
     </div>
