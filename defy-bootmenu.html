@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Michael Zimmermann's Project homepage.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>mzimmermann.info</title>
+
+    <link rel="stylesheet" href="//storage.googleapis.com/code.getmdl.io/1.0.0/material.blue_grey-orange.min.css" />
+    <script src="//storage.googleapis.com/code.getmdl.io/1.0.0/material.min.js"></script>
+    <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="/project.css">
+    <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+    <div class="demo-layout mdl-layout mdl-layout--fixed-header mdl-js-layout">
+        <header class="demo-header mdl-layout__header mdl-layout__header--scroll">
+            <div class="header-gradient">
+                <div class="mdl-layout__header-row">
+                    <!-- Title -->
+                    <span class="mdl-layout-title">Michael Zimmermann</span>
+                    <!-- Add spacer, to align navigation to the right -->
+                    <div class="mdl-layout-spacer"></div>
+                    <!-- Navigation. We hide it in small screens. -->
+                    <nav class="mdl-navigation mdl-layout--large-screen-only">
+                        <a class="mdl-navigation__link" href="">About</a>
+                        <a class="mdl-navigation__link" href="">Projects</a>
+                        <a class="mdl-navigation__link" href="">Contact</a>
+                    </nav>
+                </div>
+
+                <div class="mdl-layout__header-row" style="padding-left: 20px;">
+                    <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+                    <!-- Title -->
+                    <h2>Defy Bootmenu</h2>
+                </div>
+
+                <div class="mdl-layout__header-row" style="padding-left: 20px;">
+                    <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+                    <!-- Description -->
+                    <h4>A graphical bootmenu for Motorola Defy</h4>
+                </div>
+            </div>
+        </header>
+        <div class="mdl-layout__drawer">
+            <span class="mdl-layout-title">mzimmermann.info</span>
+            <nav class="mdl-navigation">
+                <a class="mdl-navigation__link" href="">About</a>
+                <a class="mdl-navigation__link" href="">Projects</a>
+                <a class="mdl-navigation__link" href="">Contact</a>
+            </nav>
+        </div>
+
+        <main class="demo-main mdl-layout__content">
+            <a name="top"></a>
+
+            <div class="demo-container mdl-grid">
+                <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+                <div class="demo-content mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
+                    <p>On Motorola Defy a userspace application called “bootmenu” is used to intercept boot process and allow loading custom recovery and roms.
+                        <br> The UI of this application copied from “Clockworkmod Recovery” and does not provide touch functionality.</p>
+                    <p>That’s why I rewrote the whole UI to change that. I added a more touch-friendly UI and added touch support to input handling.</p>
+                    <p>Later when the goal of this project was reached I’ve completely integrated this into <a title="MultiBoot" href="http://mzimmermann.info/projects/multiboot-for-motorola-defy/" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://mzimmermann.info']);">MultiBoot</a> to provide easy-to-use Multiboot features.</p>
+                    <p>More information are available on this thread:
+                        <br>
+                        <a href="http://forum.xda-developers.com/showthread.php?t=1601270" target="_blank">http://forum.xda-developers.com/showthread.php?t=1601270</a></p>
+                </div>
+            </div>
+
+            <!-- FOOTER -->
+            <footer class="android-footer mdl-mega-footer">
+                <div class="mdl-mega-footer--top-section">
+                    <div class="mdl-mega-footer--left-section">
+                        <a target="_blank" href="https://github.com/M1cha">
+                            <button class="mdl-mega-footer--social-btn social-btn__github"></button>
+                        </a>
+                        &nbsp;
+                        <a target="_blank" href="https://plus.google.com/+MichaelZimmermann/posts">
+                            <button class="mdl-mega-footer--social-btn social-btn__gplus"></button>
+                        </a>
+                        &nbsp;
+                        <button class="mdl-mega-footer--social-btn"></button>
+                    </div>
+                    <div class="mdl-mega-footer--right-section">
+                        <a class="mdl-typography--font-light" href="#top">
+                Back to Top
+                <i class="material-icons">expand_less</i>
+              </a>
+                    </div>
+                </div>
+
+            </footer>
+        </main>
+    </div>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            $root = $('.demo-layout');
+            $('a[href*=#]:not([href=#])').click(function() {
+                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                    if (target.length) {
+                        $root.animate({
+                            scrollTop: $root.scrollTop() + target.offset().top - $root.offset().top
+                        }, 1000);
+                        return false;
+                    }
+                }
+            });
+        });
+
+    </script>
+</body>
+
+</html>
