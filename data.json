@@ -1,6 +1,12 @@
 {
     "title":"Michael Zimmermann",
     
+    "menu": {
+        "About":"/about.html",
+        "Projects":"/",
+        "Contact":"/contact.html"
+    },
+
     "projects": {
         "Top projects": [
             {
