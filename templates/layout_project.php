@@ -4,6 +4,7 @@
 
 <div class="demo-layout mdl-layout mdl-layout--fixed-header mdl-js-layout">
     <header class="demo-header mdl-layout__header mdl-layout__header--scroll">
+        <a href="/"><div class="mdl-layout__drawer-button"><i class="material-icons">arrow_back</i></div></a>
         <div class="header-gradient">
             <?=$this->insert('actionbar')?>
 
@@ -20,8 +21,6 @@
             </div>
         </div>
     </header>
-    
-    <?=$this->insert('navigation_drawer')?>
 
     <main class="demo-main mdl-layout__content">
         <a name="top"></a>
