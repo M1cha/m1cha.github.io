@@ -1,4 +1,4 @@
-<?php $this->layout('layout_project', ["project"=>$project]) ?>
+<?php $this->layout('layout_project', ["project"=>$project, 'themecolor'=>'#253036']) ?>
 
 <p>The MMB322-Toolbox is a application for the Android set-top box “Meteorit MMB322″ from PEARL.
     <br> More information about this product is available in the shop: <a href="http://www.pearl.de/a-PX1534-1600.shtml" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://www.pearl.de']);" rel="nofollow" title="" class="ext-link ext-icon-2" target="_blank">http://www.pearl.de/a-PX1534-1600.shtml</a></p>

@@ -1,4 +1,4 @@
-<?php $this->layout('layout_project', ["project"=>$project]) ?>
+<?php $this->layout('layout_project', ["project"=>$project, 'themecolor'=>'#253036']) ?>
 
 <p>On Motorola Defy a userspace application called “bootmenu” is used to intercept boot process and allow loading custom recovery and roms.
     <br> The UI of this application copied from “Clockworkmod Recovery” and does not provide touch functionality.</p>

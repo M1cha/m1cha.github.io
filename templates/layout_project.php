@@ -1,4 +1,10 @@
-<?php $this->layout('layout') ?>
+<?php
+$env = [];
+if(isset($themecolor))
+   $env['themecolor'] = $themecolor;
+
+$this->layout('layout', $env);
+?>
 
 <link rel="stylesheet" href="/assets/css/project.css">
 

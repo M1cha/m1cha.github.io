@@ -1,4 +1,4 @@
-<?php $this->layout('layout_project', ["project"=>$project]) ?>
+<?php $this->layout('layout_project', ["project"=>$project, "themecolor"=>"#000000"]) ?>
 
 <style>
     .demo-header {

@@ -1,4 +1,4 @@
-<?php $this->layout('layout') ?>
+<?php $this->layout('layout', ['themecolor'=>'#607D8B']) ?>
 
 <!-- Always shows a header, even in smaller screens. -->
 <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
