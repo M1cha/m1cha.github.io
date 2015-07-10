@@ -5,3 +5,7 @@ $(DEFAULT_GOAL):
 
 clean:
 	rm -Rf projects index.html
+
+watch:
+	while inotifywait -r -e modify,move,create,delete templates; do $(MAKE); done
+
