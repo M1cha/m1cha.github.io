@@ -19,7 +19,9 @@ function renderTpl($name, $env=[]) {
     file_put_contents($name.".html", $content);
 }
 
-renderTpl("index");
+foreach($GLOBALS["pagedata"]->compile_targets as $target) {
+    renderTpl($target);
+}
 
 @mkdir("projects");
 foreach($GLOBALS["pagedata"]->projects as $category=>$projects) {
