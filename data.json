@@ -60,16 +60,6 @@
                 "headertext":"KHOOK"
             },
             {
-                "title":"HWInfo",
-                "description":"A app for reading hardware information of Xiaomi MI2 devices",
-                "headertext":"HWINFO"
-            },
-            {
-                "title":"MIUICamera Port",
-                "description":"A port of the famous MIUI camera to vanilla Android",
-                "image":"/assets/images/miuicamera.png"
-            },
-            {
                 "title":"Defy Multiboot",
                 "description":"A multiboot solution for Motorola Defy",
                 "image":"/assets/images/multiboot.png"
