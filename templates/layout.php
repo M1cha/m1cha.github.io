@@ -12,6 +12,19 @@
         <meta name="theme-color" content="<?=$themecolor?>">
     <?php endif ?>
 
+    <script src="//crypto-js.googlecode.com/svn/tags/3.1.2/build/components/core-min.js"></script>
+    <script src="//crypto-js.googlecode.com/svn/tags/3.1.2/build/components/enc-base64-min.js"></script>
+    <script>
+        function mx() {
+            var ret = "";
+            for(var i=arguments.length-1; i>=0; i--) {
+                ret+=arguments[i];
+            }
+            
+            return CryptoJS.enc.Base64.parse(ret).toString(CryptoJS.enc.Utf8);
+        }
+    </script>
+
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
