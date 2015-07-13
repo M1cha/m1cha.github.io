@@ -9,3 +9,5 @@ clean:
 watch:
 	while inotifywait -r -e modify,move,create,delete templates; do $(MAKE); done
 
+run:
+	php -d open_basedir=NULL -S localhost:8888
