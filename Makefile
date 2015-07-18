@@ -33,5 +33,5 @@ publish:
 	# add all files, commit and push
 	cd out && \
 		git add --all && \
-		git commit -m "Update from: $$(git -C .. log --oneline  -1)"
+		git commit -m "Update from: $$(git -C .. log --oneline  -1)" && \
 		git push origin HEAD:master
