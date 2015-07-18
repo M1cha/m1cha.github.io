@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="Michael Zimmermann's Project homepage.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Michael Zimmermann project programming development">
     <title><?=$this->e($GLOBALS["pagedata"]->title)?></title>
 
     <?php if (isset($themecolor)): ?>
