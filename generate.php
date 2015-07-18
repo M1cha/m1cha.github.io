@@ -50,17 +50,18 @@ function renderTpl($name, $env=[]) {
     $content = ob_get_contents();
     ob_end_clean();
 
-    file_put_contents($name.".html", $content);
+    file_put_contents("out/".$name.".html", $content);
 }
 
+@mkdir("out");
 foreach($GLOBALS["pagedata"]->compile_targets as $target) {
     renderTpl($target);
 }
 
-@mkdir("projects");
+@mkdir("out/projects");
 foreach($GLOBALS["pagedata"]->projects as $category=>$projects) {
     $catdir = "projects/".makeurlname($category);
-    @mkdir($catdir);
+    @mkdir("out/".$catdir);
     
     foreach($projects as $project) {
         renderTpl($catdir."/".makeurlname($project->title), ["project"=>$project]);
