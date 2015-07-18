@@ -3,6 +3,7 @@ DEFAULT_GOAL := all
 $(DEFAULT_GOAL):
 	php -d open_basedir=NULL generate.php
 	cp -R assets out/
+	cp -R uploads out/
 	cp CNAME out/
 	cp robots.txt out/
 
