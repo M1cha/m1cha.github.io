@@ -1,0 +1,90 @@
+{
+    "title":"Michael Zimmermann",
+    
+    "projects": {
+        "Top projects": [
+            {
+                "title":"EFIDroid",
+                "description":"A multiboot solution for mobile devices",
+                "image":"/assets/images/efidroid.svg"
+            },
+            {
+                "title":"Xiaomi MI2",
+                "description":"Everything related to this device. From partition table editing to custom ROM's",
+                "image":"/assets/images/xiaomi.png",
+                "headercolor":"#f57921"
+            },
+            {
+                "title":"AROMA Recovery",
+                "description":"A Android recovery tool based on amarullz's libaroma",
+                "headertext":"AROMA"
+            }
+        ],
+
+        "University": [
+            {
+                "title":"LKTris",
+                "description":"Play Tetris in your phone's bootloader mode",
+                "image":"/assets/images/lktris.png",
+                "headercolor":"#000000"
+            }
+        ],
+
+        "Contributions": [
+            {
+                "title":"libtracy",
+                "description":"A system call tracer and injector",
+                "headertext":"TRACY"
+            },
+            {
+                "title":"GRUB",
+                "description":"GNU GRUB bootloader",
+                "headertext":"GRUB"
+            },
+            {
+                "title":"Android kernel",
+                "description":"Android's fork of the linux kernel",
+                "image":"/assets/images/android.svg"
+            }
+        ],
+        
+        "Misc": [
+            {
+                "title":"libkhook",
+                "description":"Load dynamically linked code into kernel space via /dev/mem",
+                "headertext":"KHOOK"
+            },
+            {
+                "title":"HWInfo",
+                "description":"A app for reading hardware information of Xiaomi MI2 devices",
+                "headertext":"HWINFO"
+            },
+            {
+                "title":"MIUICamera Port",
+                "description":"A port of the famous MIUI camera to vanilla Android",
+                "image":"/assets/images/miuicamera.png"
+            },
+            {
+                "title":"Defy Multiboot",
+                "description":"A multiboot solution for Motorola Defy",
+                "image":"/assets/images/multiboot.png"
+            },
+            {
+                "title":"Defy bootmenu",
+                "description":"A graphical bootmenu for Motorola Defy",
+                "image":"/assets/images/defy-bootmenu.png",
+                "headercolor":"#000000"
+            },
+            {
+                "title":"MIUI Flag Configer",
+                "description":"Configure Android ROM's before installing them.",
+                "image":"/assets/images/miui-flag-configer.png"
+            },
+            {
+                "title":"MMB322 Toolbox",
+                "description":"A toolbox for managing the MMB322 TV box",
+                "image":"/assets/images/mmb322.png"
+            }
+        ]
+    }
+}
