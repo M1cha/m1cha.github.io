@@ -104,6 +104,7 @@ your background is light. */
 .android-link .material-icons {
     position: relative;
     top: 6px;
+    vertical-align: baseline;
 }
 .android-fab {
     position: absolute;

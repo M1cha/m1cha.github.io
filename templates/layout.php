@@ -37,7 +37,7 @@
 
     </script>
 
-    <link rel="stylesheet" href="//storage.googleapis.com/code.getmdl.io/1.0.0/material.blue_grey-orange.min.css" />
+    <link rel="stylesheet" href="//storage.googleapis.com/code.getmdl.io/1.0.5/material.blue_grey-orange.min.css" />
     <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="/assets/css/styles.css">
 </head>
@@ -46,7 +46,7 @@
 
     <?=$this->section('content')?>
 
-    <script src="//storage.googleapis.com/code.getmdl.io/1.0.0/material.min.js"></script>
+    <script src="//storage.googleapis.com/code.getmdl.io/1.0.5/material.min.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script type="text/javascript">
         $(function() {
