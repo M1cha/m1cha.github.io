@@ -24,11 +24,6 @@
                 "description":"Everything related to this device. From partition table editing to custom ROM's",
                 "image":"/assets/images/xiaomi.png",
                 "headercolor":"#f57921"
-            },
-            {
-                "title":"AROMA Recovery",
-                "description":"A Android recovery tool based on amarullz's libaroma",
-                "headertext":"AROMA"
             }
         ],
 
