@@ -37,24 +37,6 @@
             }
         ],
 
-        "Contributions": [
-            {
-                "title":"libtracy",
-                "description":"A system call tracer and injector",
-                "headertext":"TRACY"
-            },
-            {
-                "title":"GRUB",
-                "description":"GNU GRUB bootloader",
-                "headertext":"GRUB"
-            },
-            {
-                "title":"Android kernel",
-                "description":"Android's fork of the linux kernel",
-                "image":"/assets/images/android.svg"
-            }
-        ],
-
         "Misc": [
             {
                 "title":"libkhook",
