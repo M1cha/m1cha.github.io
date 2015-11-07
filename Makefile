@@ -6,7 +6,7 @@ $(DEFAULT_GOAL):
 	@find assets/css -name "*.scss" | \
 		while read file; do \
 		  rm "out/$$file" ; \
-		  sass -C "$$file" "out/$${file%.scss}.css" ; \
+		  sass -C --sourcemap=none "$$file" "out/$${file%.scss}.css" ; \
 		done
 
 	cp -R uploads out/
