@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "league/plates",
-            "version": "3.1.0",
+            "version": "3.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/plates.git",
-                "reference": "c39d8fbcbeb07a0948d5e1cf8d78c6e1ef3e81a8"
+                "reference": "2d8569e9f140a70d6a05db38006926f7547cb802"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/plates/zipball/c39d8fbcbeb07a0948d5e1cf8d78c6e1ef3e81a8",
-                "reference": "c39d8fbcbeb07a0948d5e1cf8d78c6e1ef3e81a8",
+                "url": "https://api.github.com/repos/thephpleague/plates/zipball/2d8569e9f140a70d6a05db38006926f7547cb802",
+                "reference": "2d8569e9f140a70d6a05db38006926f7547cb802",
                 "shasum": ""
             },
             "require-dev": {
@@ -56,7 +56,7 @@
                 "templating",
                 "views"
             ],
-            "time": "2014-10-21 12:06:12"
+            "time": "2015-07-09 02:14:40"
         }
     ],
     "packages-dev": [],
