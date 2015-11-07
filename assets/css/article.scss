@@ -104,6 +104,10 @@
    font-size: 0.9rem;
    line-height: 24px;
  }
+
+ span {
+   float: left;
+ }
 }
 
 .articlenote_languages {
@@ -119,4 +123,9 @@
 .articlenote_source {
   @extend .articlenote_line;
   border-color: #607D8B;
+}
+
+.articlenote_doc {
+  @extend .articlenote_line;
+  border-color: #03A9F4;
 }

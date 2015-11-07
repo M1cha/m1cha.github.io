@@ -59,7 +59,7 @@ Another thing that would be useful is loading relocatable and dynamically linkab
 Since this is not an easy task I searched for a easily adaptable solution that already exists which I did.<br>
 The Bootloader GRUB supports loading modules from a filesystem. They compile the C code to relocatable ELF binaries and relocate and link them at runtime.<br>
 Additionally this code was kinda easy to port to my hack's UNIX C environment.<br>
-And that's pretty much it. Now we can load ELF binaries from disk, allocate executable kernel memory, copy the code to that location, relocate it to the proper address, and link all kernel functions visible in /proc/kallsyms.<br>    
+And that's pretty much it. Now we can load ELF binaries from disk, allocate executable kernel memory, copy the code to that location, relocate it to the proper address, and link all kernel functions visible in /proc/kallsyms.<br>
 </p>
 
 <h3>Summary</h3>
@@ -68,3 +68,8 @@ As you saw the hack has a few requirements. We need to be root, need a unprotect
 But if that's the case you can easily load (custom) kernel modules - even if the kernel has LKM disabled.<br>
 To protect yourself against this, just enable 'CONFIG_STRICT_DEVMEM' and disable 'CONFIG_KALLSYMS' in your kernel config.
 </p>
+
+<ul class="articlenote_source">
+  <h4>Sourcecode</h4>
+  <a href="https://github.com/M1cha/khook" target="_blank">GitHub</a>
+</ul>

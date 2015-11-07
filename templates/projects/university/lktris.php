@@ -15,6 +15,13 @@
 <p>I developed this for my smartphone 'Xiaomi MI2' and used the manufacturers bootloader as a code base.
     <br>This bootloader supports all I needed: Display, volume/power buttons and (optionally) thread support.
 </p>
-<p><a href="/uploads/lktris-doc.pdf" target="_blank">Project documentation</a>
-    <br><a href="http://github.com/M1cha/lktris" target="_blank">Source code</a>
-</p>
+
+<ul class="articlenote_doc">
+  <h4>Documentation</h4>
+  <a href="/uploads/lktris-doc.pdf" target="_blank">PDF file</a>
+</ul>
+<br/>
+<ul class="articlenote_source">
+  <h4>Sourcecode</h4>
+  <a href="https://github.com/M1cha/lktris" target="_blank">GitHub</a>
+</ul>

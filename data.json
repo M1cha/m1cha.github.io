@@ -1,6 +1,6 @@
 {
     "title":"Michael Zimmermann",
-    
+
     "compile_targets":[
         "index",
         "about",
@@ -32,7 +32,8 @@
                 "title":"LKTris",
                 "description":"Play Tetris in your phone's bootloader mode",
                 "image":"/assets/images/lktris.png",
-                "headercolor":"#000000"
+                "headercolor":"#000000",
+                "languages":["C"]
             }
         ],
 
@@ -53,33 +54,38 @@
                 "image":"/assets/images/android.svg"
             }
         ],
-        
+
         "Misc": [
             {
                 "title":"libkhook",
                 "description":"Load dynamically linked code into kernel space via /dev/mem",
-                "headertext":"KHOOK"
+                "headertext":"KHOOK",
+                "languages":["C"]
             },
             {
                 "title":"Defy Multiboot",
                 "description":"A multiboot solution for Motorola Defy",
-                "image":"/assets/images/multiboot.png"
+                "image":"/assets/images/multiboot.png",
+                "languages":["C", "Bash"]
             },
             {
                 "title":"Defy bootmenu",
                 "description":"A graphical bootmenu for Motorola Defy",
                 "image":"/assets/images/defy-bootmenu.png",
-                "headercolor":"#000000"
+                "headercolor":"#000000",
+                "languages":["C"]
             },
             {
                 "title":"MIUI Flag Configer",
                 "description":"Configure Android ROM's before installing them.",
-                "image":"/assets/images/miui-flag-configer.png"
+                "image":"/assets/images/miui-flag-configer.png",
+                "languages":["Java"]
             },
             {
                 "title":"MMB322 Toolbox",
                 "description":"A toolbox for managing the MMB322 TV box",
-                "image":"/assets/images/mmb322.png"
+                "image":"/assets/images/mmb322.png",
+                "languages":["Java"]
             }
         ]
     }

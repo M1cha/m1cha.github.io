@@ -12,7 +12,9 @@
 <p>Einsteinno1 provided configuring his rom by adding flags into the file name of the installation package.
     <br> The flag configer is just an user interface for reading and changing these flags. Everything else is done by the installation script.</p>
 <p>Nowadays this app is highly deprecated and not used anymore because it was replaced by tools of other great developers.
-    <br> One example is the AROMA-Installer:
+    <br> One example is the <a href="http://forum.xda-developers.com/showthread.php?t=1461712" target="_blank">AROMA-Installer</a>.
     <br>
-    <a href="http://forum.xda-developers.com/showthread.php?t=1461712" target="_blank">http://forum.xda-developers.com/showthread.php?t=1461712</a></p>
-<p>Sourcecode of this app:&nbsp;<a href="https://github.com/M1cha/androidconfigurableupdater" target="_blank">https://github.com/M1cha/androidconfigurableupdater</a></p>
+<ul class="articlenote_source">
+  <h4>Sourcecode</h4>
+  <a href="https://github.com/M1cha/Mandroidconfigurableupdater" target="_blank">GitHub</a>
+</ul>
