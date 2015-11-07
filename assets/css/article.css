@@ -68,7 +68,7 @@
 .demo-footer .mdl-mini-footer--link-list a {
   font-size: 13px; }
 
-.articlenote, .articlenote_line, .articlenote_languages, .articlenote_forum, .articlenote_source, .articlenote_doc {
+.articlenote, .articlenote_line, .articlenote_languages, .articlenote_forum, .articlenote_source, .articlenote_doc, .toc {
   border-left: 4px solid #C1EEF4;
   margin: 0px;
   padding: 0;
@@ -76,11 +76,11 @@
   display: flex;
   flex-direction: column; }
 
-.articlenote h4, .articlenote_line h4, .articlenote_languages h4, .articlenote_forum h4, .articlenote_source h4, .articlenote_doc h4 {
+.articlenote h4, .articlenote_line h4, .articlenote_languages h4, .articlenote_forum h4, .articlenote_source h4, .articlenote_doc h4, .toc h4 {
   font-size: 0.9rem;
   margin-top: 0; }
 
-.articlenote a, .articlenote_line a, .articlenote_languages a, .articlenote_forum a, .articlenote_source a, .articlenote_doc a {
+.articlenote a, .articlenote_line a, .articlenote_languages a, .articlenote_forum a, .articlenote_source a, .articlenote_doc a, .toc a {
   text-decoration: none;
   font-size: 16px;
   line-height: 28px;
@@ -111,4 +111,9 @@
 .articlenote_doc {
   border-color: #03A9F4; }
 
-/*# sourceMappingURL=article.css.map */
+.toc {
+  margin: 24px; }
+  .toc a {
+    color: #4DD0E1; }
+  .toc h4 {
+    font-weight: 500; }
