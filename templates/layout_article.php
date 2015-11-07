@@ -13,7 +13,7 @@ $this->layout('layout', $env);
 .demo-main {
     margin-top: -26vh;
 }
-    
+
 .demo-header .header-gradient {
     background: none;
     filter: none;
@@ -45,7 +45,7 @@ $this->layout('layout', $env);
 
     <main class="demo-main mdl-layout__content">
         <a name="top"></a>
-        
+
         <div class="demo-container mdl-grid">
             <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
             <div class="demo-content mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
@@ -53,9 +53,21 @@ $this->layout('layout', $env);
                     <h3><?=$this->e($title)?></h3>
                 <?php endif ?>
                 <?=$this->section('content')?>
+
+                <?php if(isset($languages)):?>
+                    <br>
+                    <ul class="articlenote_languages">
+                      <h4>languages used:</h4>
+                      <?php foreach ($languages as $language) {
+                        if($language!=$languages[0])
+                          echo ", ";
+                        echo $language;
+                      } ?>
+                    </ul>
+                <?php endif ?>
             </div>
         </div>
-        
+
         <?=$this->insert('footer')?>
     </main>
 </div>

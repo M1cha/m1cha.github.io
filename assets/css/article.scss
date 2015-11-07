@@ -69,3 +69,54 @@
 .demo-footer .mdl-mini-footer--link-list a {
     font-size: 13px;
 }
+
+.articlenote {
+  border-left: 4px solid #C1EEF4;
+  margin: 0px;
+  padding: 0;
+  padding-left: 8px;
+  display: flex;
+  flex-direction: column;
+}
+.articlenote h4 {
+  font-size: 0.9rem;
+  margin-top: 0;
+}
+.articlenote a {
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 28px;
+  display: block;
+}
+
+.articlenote_line {
+  @extend .articlenote;
+  display: inline-block;
+
+  h4 {
+    float: left;
+    margin: 0 5px 0 0;
+    line-height: 24px;
+  }
+
+  a {
+   float: left;
+   font-size: 0.9rem;
+   line-height: 24px;
+ }
+}
+
+.articlenote_languages {
+  @extend .articlenote_line;
+  border-color: #FF5722;
+}
+
+.articlenote_forum {
+  @extend .articlenote_line;
+  border-color: #8BC34A;
+}
+
+.articlenote_source {
+  @extend .articlenote_line;
+  border-color: #607D8B;
+}
