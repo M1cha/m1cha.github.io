@@ -78,7 +78,7 @@
 
     <main class="demo-main mdl-layout__content">
         <a name="top"></a>
-        
+
         <div class="demo-container mdl-grid">
             <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
             <div class="demo-content mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
@@ -144,7 +144,7 @@ Another thing that would be useful is loading relocatable and dynamically linkab
 Since this is not an easy task I searched for a easily adaptable solution that already exists which I did.<br>
 The Bootloader GRUB supports loading modules from a filesystem. They compile the C code to relocatable ELF binaries and relocate and link them at runtime.<br>
 Additionally this code was kinda easy to port to my hack's UNIX C environment.<br>
-And that's pretty much it. Now we can load ELF binaries from disk, allocate executable kernel memory, copy the code to that location, relocate it to the proper address, and link all kernel functions visible in /proc/kallsyms.<br>    
+And that's pretty much it. Now we can load ELF binaries from disk, allocate executable kernel memory, copy the code to that location, relocate it to the proper address, and link all kernel functions visible in /proc/kallsyms.<br>
 </p>
 
 <h3>Summary</h3>
@@ -152,9 +152,20 @@ And that's pretty much it. Now we can load ELF binaries from disk, allocate exec
 As you saw the hack has a few requirements. We need to be root, need a unprotected /dev/mem device, and /proc/kallsyms needs to be enabled.<br>
 But if that's the case you can easily load (custom) kernel modules - even if the kernel has LKM disabled.<br>
 To protect yourself against this, just enable 'CONFIG_STRICT_DEVMEM' and disable 'CONFIG_KALLSYMS' in your kernel config.
-</p>            </div>
+</p>
+
+<ul class="articlenote_source">
+  <h4>Sourcecode</h4>
+  <a href="https://github.com/M1cha/khook" target="_blank">GitHub</a>
+</ul>
+
+                                    <br>
+                    <ul class="articlenote_languages">
+                      <h4>languages used:</h4>
+                      C                    </ul>
+                            </div>
         </div>
-        
+
         <!-- FOOTER -->
 <footer class="android-footer mdl-mega-footer">
     <div class="mdl-mega-footer--top-section">
@@ -180,6 +191,7 @@ To protect yourself against this, just enable 'CONFIG_STRICT_DEVMEM' and disable
 </footer>
     </main>
 </div>
+
     <script src="//storage.googleapis.com/code.getmdl.io/1.0.5/material.min.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script type="text/javascript">

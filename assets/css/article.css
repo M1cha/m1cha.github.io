@@ -13,59 +13,102 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
 .demo-main {
-    -webkit-flex-shrink: 0;
-    -ms-flex-negative: 0;
-    flex-shrink: 0;
-}
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0; }
+
 .demo-header {
-    height: 40vh;
-    -webkit-flex-shrink: 0;
-    -ms-flex-negative: 0;
-    flex-shrink: 0;
-    z-index: 1;
-    min-height: 190px;
-}
+  height: 40vh;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  z-index: 1;
+  min-height: 190px; }
+
 .mdl-layout__header .mdl-layout__drawer-button {
-  background-color: transparent;
-}
+  background-color: transparent; }
+
 .demo-header .header-gradient {
-    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
-    /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.65)), color-stop(100%, rgba(0, 0, 0, 0)));
-    /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
-    /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
-    /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
-    /* IE10+ */
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
-    /* W3C */
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000', GradientType=0);
-    /* IE6-9 */
-}
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.65) 0%, transparent 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.65)), color-stop(100%, transparent));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.65) 0%, transparent 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0.65) 0%, transparent 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.65) 0%, transparent 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.65) 0%, transparent 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000', GradientType=0);
+  /* IE6-9 */ }
+
 .demo-container {
-    max-width: 1600px;
-    width: calc(100% - 16px);
-    margin: 0 auto;
-}
+  max-width: 1600px;
+  width: calc(100% - 16px);
+  margin: 0 auto; }
+
 .demo-content {
-    border-radius: 2px;
-    padding: 80px 56px;
-    margin-bottom: 80px;
-    padding-top: 56px;
-}
+  border-radius: 2px;
+  padding: 80px 56px;
+  margin-bottom: 80px;
+  padding-top: 56px; }
+
 .demo-layout.is-small-screen .demo-content {
-    padding: 40px 28px;
-}
+  padding: 40px 28px; }
+
 .demo-content h3 {
-    margin-top: 48px;
-}
+  margin-top: 48px; }
+
 .demo-footer {
-    padding-left: 40px;
-}
+  padding-left: 40px; }
+
 .demo-footer .mdl-mini-footer--link-list a {
-    font-size: 13px;
-}
+  font-size: 13px; }
+
+.articlenote, .articlenote_line, .articlenote_languages, .articlenote_forum, .articlenote_source, .articlenote_doc {
+  border-left: 4px solid #C1EEF4;
+  margin: 0px;
+  padding: 0;
+  padding-left: 8px;
+  display: flex;
+  flex-direction: column; }
+
+.articlenote h4, .articlenote_line h4, .articlenote_languages h4, .articlenote_forum h4, .articlenote_source h4, .articlenote_doc h4 {
+  font-size: 0.9rem;
+  margin-top: 0; }
+
+.articlenote a, .articlenote_line a, .articlenote_languages a, .articlenote_forum a, .articlenote_source a, .articlenote_doc a {
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 28px;
+  display: block; }
+
+.articlenote_line, .articlenote_languages, .articlenote_forum, .articlenote_source, .articlenote_doc {
+  display: inline-block; }
+  .articlenote_line h4, .articlenote_languages h4, .articlenote_forum h4, .articlenote_source h4, .articlenote_doc h4 {
+    float: left;
+    margin: 0 5px 0 0;
+    line-height: 24px; }
+  .articlenote_line a, .articlenote_languages a, .articlenote_forum a, .articlenote_source a, .articlenote_doc a {
+    float: left;
+    font-size: 0.9rem;
+    line-height: 24px; }
+  .articlenote_line span, .articlenote_languages span, .articlenote_forum span, .articlenote_source span, .articlenote_doc span {
+    float: left; }
+
+.articlenote_languages {
+  border-color: #FF5722; }
+
+.articlenote_forum {
+  border-color: #8BC34A; }
+
+.articlenote_source {
+  border-color: #607D8B; }
+
+.articlenote_doc {
+  border-color: #03A9F4; }
+
+/*# sourceMappingURL=article.css.map */
