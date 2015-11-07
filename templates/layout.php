@@ -21,7 +21,7 @@
             for(var i=arguments.length-1; i>=0; i--) {
                 ret+=arguments[i];
             }
-            
+
             return CryptoJS.enc.Base64.parse(ret).toString(CryptoJS.enc.Utf8);
         }
     </script>
@@ -37,16 +37,17 @@
 
     </script>
 
-    <link rel="stylesheet" href="//storage.googleapis.com/code.getmdl.io/1.0.5/material.blue_grey-orange.min.css" />
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
     <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="//storage.googleapis.com/code.getmdl.io/1.0.6/material.blue_grey-orange.min.css" />
     <link rel="stylesheet" href="/assets/css/styles.css">
 </head>
 
-<body>
+<body class="mdl-color-text--grey-700 mdl-base">
 
     <?=$this->section('content')?>
 
-    <script src="//storage.googleapis.com/code.getmdl.io/1.0.5/material.min.js"></script>
+    <script src="//storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script type="text/javascript">
         $(function() {

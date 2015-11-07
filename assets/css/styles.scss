@@ -1,3 +1,25 @@
+html, body {
+  font-family: 'Roboto', 'Helvetica', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.mdl-card__title-text {
+  font-weight: 400;
+}
+
+.mdl-typography--font-thin {
+  font-weight: 300 !important;
+}
+
+.mdl-typography--font-light {
+  font-weight: 400 !important;
+}
+
+.mdl-button {
+  padding: 0 8px;
+}
+
 .layout-transparent main {
     background-color: white;
 }
