@@ -16,8 +16,6 @@
 <p>As you can see it just mounts the sdcard and does create and configure loop devices for every partition of the real NAND. After the kernel-module is loaded, all file-access to the original&nbsp;partitions&nbsp;will be redirected to the loop-devices. The last step is to mount the new system partition. In fact, it moves the mount-point of the original system-partition to another location because on defy it’s already in use at this stage.</p>
 <p>When this is done, we can continue with normal 2ndInit. For those of you who don’t know, bootmenu is a program on “Motorola Defy” which halts the execution of the init-process and can execute 2ndInit to allow booting a custom rom. It does also provide useful tools like recovery or overclock-settings.</p>
 <p>The most work was to fix compatibility with some rom’s which caused problems with some mods. Since version 0.7 Multiboot is fully integrated into <a title="Touchbootmenu" href="/projects/misc/defy-bootmenu.html">Touch bootmenu</a>.</p>
-<p>All information about multiboot(download, changelog, source) can be found here:
-    <br>
 
 <ul class="articlenote_forum">
   <h4>Forum</h4>
