@@ -9,7 +9,7 @@
 
 <ul class="articlenote_forum">
   <h4>Forum</h4>
-  <a href="http://www.android-hilfe.de/sonstige-android-geraete/115788-mmb-322-toolbox.html" target="_blank">Android-Hilfe.de</a></p>
+  <a href="http://www.android-hilfe.de/sonstige-android-geraete/115788-mmb-322-toolbox.html" target="_blank">Android-Hilfe.de</a>
 </ul>
 <br/>
 <ul class="articlenote_source">

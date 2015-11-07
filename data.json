@@ -23,7 +23,8 @@
                 "title":"Xiaomi MI2",
                 "description":"Everything related to this device. From partition table editing to custom ROM's",
                 "image":"/assets/images/xiaomi.png",
-                "headercolor":"#f57921"
+                "headercolor":"#f57921",
+                "languages":["C", "C++", "Shell", "Java", "ARM Assembly", "Python", "Smali"]
             }
         ],
 
@@ -48,7 +49,7 @@
                 "title":"Defy Multiboot",
                 "description":"A multiboot solution for Motorola Defy",
                 "image":"/assets/images/multiboot.png",
-                "languages":["C", "Bash"]
+                "languages":["C", "Shell"]
             },
             {
                 "title":"Defy bootmenu",

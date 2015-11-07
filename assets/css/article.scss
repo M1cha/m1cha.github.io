@@ -129,3 +129,16 @@
   @extend .articlenote_line;
   border-color: #03A9F4;
 }
+
+.toc {
+  @extend .articlenote;
+  margin: 24px;
+
+  a {
+    color: #4DD0E1;
+  }
+
+  h4 {
+    font-weight: 500;
+  }
+}

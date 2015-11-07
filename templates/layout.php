@@ -41,6 +41,7 @@
     <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="//storage.googleapis.com/code.getmdl.io/1.0.6/material.blue_grey-orange.min.css" />
     <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/vendor/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
 </head>
 
 <body class="mdl-color-text--grey-700 mdl-base">
@@ -49,9 +50,14 @@
 
     <script src="//storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="/assets/vendor/fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+    <script src="/assets/vendor/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
     <script type="text/javascript">
         $(function() {
-            $root = $('main');
+            $root = $(".demo-layout");
+            if($root.length==0)
+              $root = $('main');
             $('a[href*=#]:not([href=#])').click(function() {
                 if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
                     var target = $(this.hash);
@@ -64,6 +70,10 @@
                     }
                 }
             });
+        });
+
+        $(function() {
+      	    $(".fancybox").fancybox();
         });
 
     </script>
