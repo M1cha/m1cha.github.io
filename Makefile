@@ -3,6 +3,12 @@ DEFAULT_GOAL := all
 $(DEFAULT_GOAL):
 	php -d open_basedir=NULL generate.php
 	cp -R assets out/
+	rm -R out/assets/css/*.scss
+	@find assets/css -name "*.scss" | \
+		while read file; do \
+		  sass -C "$$file" "out/$${file%.scss}.css" ; \
+		done
+
 	cp -R uploads out/
 	cp CNAME out/
 	cp robots.txt out/
