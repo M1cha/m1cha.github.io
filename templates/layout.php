@@ -13,8 +13,8 @@
         <meta name="theme-color" content="<?=$themecolor?>">
     <?php endif ?>
 
-    <script src="//crypto-js.googlecode.com/svn/tags/3.1.2/build/components/core-min.js"></script>
-    <script src="//crypto-js.googlecode.com/svn/tags/3.1.2/build/components/enc-base64-min.js"></script>
+    <script src="/assets/js/crypto-js.min.js"></script>
+    <script src="/assets/js/enc-base64.min.js"></script>
     <script>
         function mx() {
             var ret = "";
