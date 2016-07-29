@@ -40,6 +40,12 @@
 
         "Misc": [
             {
+                "title":"MakeEFI",
+                "description":"easily build EFI modules under linux using a single command",
+                "headertext":"MAKEFI",
+                "languages":["C", "Shell"]
+            },
+            {
                 "title":"libkhook",
                 "description":"Load dynamically linked code into kernel space via /dev/mem",
                 "headertext":"KHOOK",
