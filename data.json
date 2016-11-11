@@ -42,7 +42,7 @@
             {
                 "title":"MakeEFI",
                 "description":"easily build EFI modules under linux using a single command",
-                "headertext":"MAKEFI",
+                "headertext":"MAKEEFI",
                 "languages":["C", "Shell"]
             },
             {
