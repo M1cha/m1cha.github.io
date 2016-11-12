@@ -82,6 +82,8 @@ Still, compared to most desktop bootloaders EFIDroid is very advanced and users 
 
 <ul class="articlenote_forum">
   <h4>Links</h4>
+  <a href="http://efidroid.org/" target="_blank">EFIDroid</a>
+  <span>,&nbsp;</span>
   <a href="http://forum.xda-developers.com/android/software-hacking/efidroid-t3447466" target="_blank">xda-developers</a>
   <span>,&nbsp;</span>
   <a href="https://plus.google.com/communities/114053643671219382368" target="_blank">Google+</a>
