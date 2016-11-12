@@ -5,6 +5,7 @@
         "This file is @generated automatically"
     ],
     "hash": "a0ceb4fe6b88479713b1a7de0cab8c80",
+    "content-hash": "ff67ee2f8f64cdd21f79728ed4a39bab",
     "packages": [
         {
             "name": "easybook/geshi",
