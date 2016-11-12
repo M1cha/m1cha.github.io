@@ -17,7 +17,8 @@
             {
                 "title":"EFIDroid",
                 "description":"A multiboot solution for mobile devices",
-                "image":"/assets/images/efidroid.svg"
+                "image":"/assets/images/efidroid.svg",
+                "languages":["C", "Shell", "Java", "ARM Assembly", "Python", "Makefiles"]
             },
             {
                 "title":"Xiaomi MI2",
