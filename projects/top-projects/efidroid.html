@@ -152,7 +152,7 @@ Since these patches are temporary, multibooted ROM's can be copied to/from nativ
 <h4>LKL</h4>
 Since UEFI usually only supports FAT filesystems and EFIDroid needs to be able to load boot images from any linux filesystem I had to find a way to add support for these to UEFI.
 While the minimal readonly implementations usually used by bootloader would work, I found them to be quite unstable sometimes and filesystem drivers with write-access would allow for very advanced features like fastboot-flashing to loop files.<br/>
-Luckily there already was a project called LKL which aims to compiled the Linux kernel as a library so you can use the drivers in any environment. Once I ported this to UEFI it because quite easy to add support for new filesystems to UEFI. It even supports mounting encrypted partitions.<br/>
+Luckily there already was a project called LKL which aims to compiled the Linux kernel as a library so you can use the drivers in any environment. Once I ported this to UEFI it became quite easy to add support for new filesystems to UEFI. It even supports mounting encrypted partitions.<br/>
 </p>
 
 <a name="finalthoughts"></a>
