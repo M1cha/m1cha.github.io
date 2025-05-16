@@ -2,3 +2,7 @@ baseURL: https://mzimmermann.info/
 languageCode: en-us
 title: Michael Zimmermann
 theme: PaperMod
+
+caches:
+  images:
+    dir: :cacheDir/images
