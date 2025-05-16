@@ -382,3 +382,6 @@ So I did it, I actually did it. I did further tests and it's actually running
 at PCIe Gen3 speed and there seem to be no issues while running a speedtest, so
 the signal integrity seems to be good as well. The results of these speedtests
 are the topic of the next blog post. Have a nice day.
+
+All design files are available on
+[GitHub](https://github.com/M1cha/sdexpress_pcbs/tree/main/m2_m_card-to-usdex_socket).
