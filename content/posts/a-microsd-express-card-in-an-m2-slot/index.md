@@ -21,7 +21,7 @@ cards to my PC at all — let alone via PCIe. I'm a very curious person though a
 this adapter can actually be very useful:
 
 - **Speed tests**: There are multiple vendors now and that number is only gonna
-  increase with a very popular system like the Switch2 requiring them, so it
+  increase with a very popular system like the Switch 2 requiring them, so it
   makes sense to publish speed test comparisons so buyers can make an informed
   choice. Connecting them directly via their native interface bypasses
   limitations of USB adapters and conflicts of interest of the Sandisk adapter.
@@ -190,7 +190,7 @@ Did you know that high-frequency signals like PCIe need very careful routing and
 even fine-tuning in cooperation with the PCB manufacturer?_ I certainly didn't
 when I started this project. I was actually close to giving up on this whole
 project.
-I thought: `I just have to connect all this pins 1:1. How hard could that be?`.
+I thought: `I just have to connect all these pins 1:1. How hard could that be?`.
 
 ## The bad news
 
@@ -199,7 +199,7 @@ care of to make sure that the PCIe signal goes through without major
 interference. Luckily, I found several documents from Texas Instruments which
 offer very practical tips and techniques without the need for a physics degree.
 For me, the single most useful document was
-[High-Speed Layout Guidelines for Signal Conditioners and USB Hubs](https://www.ti.com/lit/an/slla414/slla414.pdf).o
+[High-Speed Layout Guidelines for Signal Conditioners and USB Hubs](https://www.ti.com/lit/an/slla414/slla414.pdf).
 
 ## Length matching
 
@@ -253,7 +253,7 @@ The TI document recommends at least 6 layers and has this useful table:
 ![Possible Board Stack-up on a Six-Layer PCB](six-layer-stackup.png)
 
 Since I lack the knowledge to make an informed decision, I simply chose the only
-model where Decoupling, EMC and Signal integrity say `Best`: Model 3.
+model where Decoupling, EMC and Signal integrity say `Good`: Model 3.
 
 ## PCB Fiber Weave
 
