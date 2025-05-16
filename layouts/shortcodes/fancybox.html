@@ -1,0 +1,10 @@
+{{- $inline := .Get "inline" | default false -}}
+
+{{ $inline_style := "" }}
+{{- if $inline }}
+  {{- $inline_style = "display: inline-block" -}}
+{{- end }}
+
+<a href="{{ .Get "src" }}" data-fancybox data-caption="{{ .Get "caption" }}" style="color:transparent;">
+  <img src="{{ .Get "src" }}" style="max-height: 50vh; {{ $inline_style }}" />
+</a>
