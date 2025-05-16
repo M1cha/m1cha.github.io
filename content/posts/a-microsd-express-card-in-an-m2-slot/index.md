@@ -272,7 +272,7 @@ microSD pads from two sides while still complying with all of the routing
 guidelines for high-speed transmission lines. After testing multiple options
 for several days I could only come up with a single configuration that works:
 
-![PCB Layout](pcb-layout.svg)
+{{< fancybox caption="PCB Layout" src="pcb-layout.svg" inline="true" >}}
 
 ## Non 45-degree differential traces
 
