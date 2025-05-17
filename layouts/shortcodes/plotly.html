@@ -1,0 +1,23 @@
+<script>
+  (function () {
+    const script_tag = document.currentScript;
+
+    window.addEventListener("load", () => {
+      const container = document.createElement("div");
+      script_tag.parentNode.insertBefore(container, script_tag);
+
+      const args = JSON.parse({{trim .Inner "\n"}});
+      const common_data = args.common_data || {};
+      var data = args.data || [];
+      const layout = args.layout || {};
+      const config = args.config || {};
+
+      // This removes duplication in e.g. bar graphs.
+      for (let i = 0; i < data.length; i++) {
+        data[i] = Object.assign({}, common_data, data[i]);
+      };
+
+      Plotly.newPlot(container, data, layout, config);
+    });
+  })();
+</script>
