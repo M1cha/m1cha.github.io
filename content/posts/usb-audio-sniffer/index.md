@@ -37,8 +37,8 @@ my own tool instead of sending it to Wireshark should not be an issue.
 
 The hardware is available from several shops on AliExpress. None of the shops
 have a ton of ratings, but I found one that I found trustworthy enough.
-Additionally, it happened to be summer sale time, so I only paid 37.79 EUR
-instead of 53.42 EUR 🎉. So here it is:
+Additionally, it happened to be summer sale time, so I only paid 37.19 EUR
+instead of 55.51 EUR 🎉. So here it is:
 
 ![USB Sniffer](usb-sniffer.jpg)
 
@@ -130,7 +130,7 @@ to prevent automatic playback:
 
 ```diff
 --- /orig/audio-src.c
-+++ /new/m1cha/audio-src.c
++++ /new/audio-src.c
 @@ -125,9 +125,10 @@
          * you need to listen to is the process event where you need to produce
          * the data.
@@ -207,12 +207,12 @@ After some thinking I came up with a new solution that solves several issues:
   blocking, to prevent increasing latency or missing USB frames.
 
 All of that is solved by using two [crossbeam
-channel](https://docs.rs/crossbeam/latest/crossbeam/channel/index.html), which
+channels](https://docs.rs/crossbeam/latest/crossbeam/channel/index.html), which
 are high-performance multi-producer multi-consumer channels.
 
 These channels contain buffers, not bytes, to remove the need for copying data.
 One channel contains unused buffers. The USB side takes one, writes data to it
-and puts it into the seconds channel of ready buffers.
+and puts it into the second channel for ready buffers.
 
 The audio side then reads from the channel with ready buffers, copies its data
 to the PipeWire buffer and puts it back into the channel with unused buffers.
