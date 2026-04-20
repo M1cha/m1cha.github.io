@@ -4,6 +4,10 @@ title = 'microSD Express Benchmarks'
 ShowToc = true
 +++
 
+> This post was updated on 2026-04-20 using improved benchmarks of the sandisk
+> card. You can find the original article on the [Wayback
+> Machine](https://web.archive.org/web/20260211220135/https://mzimmermann.info/posts/microsd-express-benchmark/)
+
 In a [previous post]({{< relref "a-microsd-express-card-in-an-m2-slot" >}}) I
 explained how I managed to connect microSD Express cards as PCIe NVMe devices
 to a computer's M.2 slot. This eliminates possible overhead and bias of USB
@@ -436,14 +440,7 @@ With passive cooling. 30°C idle, up to 83°C during test.
 
 ## 256GB Sandisk (ST25671_WDC/SDSQXFN)
 
-I only have two documented test runs for this card because I bricked it using
-a faulty firmware update before I had the idea to do multiple test runs. I'll
-update this if/once I have received a replacement. The brick was my fault and
-should not be a consideration when buying this card.
-
-Firmware revision: `RO157S2P`.
-
-With unknown mixed methods.
+With active cooling.
 
 {{< plotly >}}
 {
@@ -465,13 +462,156 @@ With unknown mixed methods.
   },
   "data": [
     {
-      "x": [ 302, 423, 598, 409, 201, 13, 653, 831, 517, 559, 650, 803 ],
+      "x": [ 242, 420, 380, 403, 197, 12, 444, 818, 392, 547, 422, 835 ],
+      "name": "Test 10",
+      "type": "bar",
+      "orientation": "h"
+    },
+    {
+      "x": [ 276, 421, 518, 406, 198, 14, 635, 822, 508, 546, 626, 814 ],
+      "name": "Test 9",
+      "type": "bar",
+      "orientation": "h"
+    },
+    {
+      "x": [ 242, 422, 443, 407, 198, 13, 618, 821, 510, 542, 317, 813 ],
+      "name": "Test 8",
+      "type": "bar",
+      "orientation": "h"
+    },
+    {
+      "x": [ 214, 396, 214, 365, 198, 12, 216, 833, 216, 546, 216, 835 ],
+      "name": "Test 7",
+      "type": "bar",
+      "orientation": "h"
+    },
+    {
+      "x": [ 243, 415, 339, 393, 198, 13, 332, 835, 303, 554, 329, 836 ],
+      "name": "Test 6",
+      "type": "bar",
+      "orientation": "h"
+    },
+    {
+      "x": [ 225, 419, 277, 399, 197, 13, 277, 823, 268, 549, 285, 835 ],
+      "name": "Test 5",
+      "type": "bar",
+      "orientation": "h"
+    },
+    {
+      "x": [ 216, 375, 216, 402, 197, 12, 270, 829, 262, 549, 278, 835 ],
+      "name": "Test 4",
+      "type": "bar",
+      "orientation": "h"
+    },
+    {
+      "x": [ 217, 391, 286, 366, 199, 12, 291, 819, 216, 549, 217, 831 ],
+      "name": "Test 3",
+      "type": "bar",
+      "orientation": "h"
+    },
+    {
+      "x": [ 246, 421, 384, 406, 198, 15, 636, 831, 518, 552, 641, 836 ],
       "name": "Test 2",
       "type": "bar",
       "orientation": "h"
     },
     {
-      "x": [ 662, 422, 657, 413, 201, 13, 645, 836, 520, 557, 648, 834 ],
+      "x": [ 657, 421, 642, 409, 200, 13, 654, 835, 523, 557, 638, 834 ],
+      "name": "Test 1",
+      "type": "bar",
+      "orientation": "h"
+    }
+  ],
+  "layout": {
+    "margin": { "t": 0, "l": 125, "b": 60 },
+    "xaxis": { "ticksuffix": " MB/s", "range": [0, 900] },
+    "legend": { "traceorder": "reversed" },
+    "autosize": true,
+    "height": 600
+  },
+  "config": {
+    "responsive": true
+  }
+}
+{{< /plotly  >}}
+
+With passive cooling.
+
+{{< plotly >}}
+{
+  "common_data": {
+    "y": [
+      "RND4K Q8T8 Write",
+      "RND4K Q8T8 Read",
+      "RND4K Q32T1 Write",
+      "RND4K Q32T1 Read",
+      "RND4K Q1T1 Write",
+      "RND4K Q1T1 Read",
+      "SEQ32M Q32T1 Write",
+      "SEQ32M Q32T1 Read",
+      "SEQ512K Q1T1 Write",
+      "SEQ512K Q1T1 Read",
+      "SEQ1G Q1T1 Write",
+      "SEQ1G Q1T1 Read"
+    ]
+  },
+  "data": [
+    {
+      "x": [ 216, 358, 216, 354, 195, 12, 217, 836, 218, 546, 217, 836 ],
+      "name": "Test 10",
+      "type": "bar",
+      "orientation": "h"
+    },
+    {
+      "x": [ 216, 358, 215, 366, 197, 12, 219, 836, 219, 547, 219, 834 ],
+      "name": "Test 9",
+      "type": "bar",
+      "orientation": "h"
+    },
+    {
+      "x": [ 212, 383, 215, 351, 197, 13, 218, 835, 219, 547, 218, 836 ],
+      "name": "Test 8",
+      "type": "bar",
+      "orientation": "h"
+    },
+    {
+      "x": [ 216, 392, 214, 360, 197, 12, 219, 836, 218, 548, 218, 836 ],
+      "name": "Test 7",
+      "type": "bar",
+      "orientation": "h"
+    },
+    {
+      "x": [ 216, 393, 217, 357, 197, 12, 219, 835, 219, 548, 218, 833 ],
+      "name": "Test 6",
+      "type": "bar",
+      "orientation": "h"
+    },
+    {
+      "x": [ 271, 419, 451, 407, 197, 13, 640, 834, 512, 546, 649, 833 ],
+      "name": "Test 5",
+      "type": "bar",
+      "orientation": "h"
+    },
+    {
+      "x": [ 310, 418, 529, 404, 200, 13, 632, 835, 526, 555, 646, 824 ],
+      "name": "Test 4",
+      "type": "bar",
+      "orientation": "h"
+    },
+    {
+      "x": [ 323, 415, 623, 397, 198, 13, 637, 822, 515, 552, 645, 831 ],
+      "name": "Test 3",
+      "type": "bar",
+      "orientation": "h"
+    },
+    {
+      "x": [ 275, 417, 624, 403, 199, 14, 640, 818, 520, 550, 645, 834 ],
+      "name": "Test 2",
+      "type": "bar",
+      "orientation": "h"
+    },
+    {
+      "x": [ 653, 418, 627, 403, 198, 14, 638, 835, 524, 558, 640, 835 ],
       "name": "Test 1",
       "type": "bar",
       "orientation": "h"
@@ -520,7 +660,7 @@ For every card, this shows the average speed of all runs of the subtest.
   },
   "data": [
     {
-      "x": [482, 422, 628, 411, 201, 13, 649, 834, 518, 558, 649, 818],
+      "x": [278, 410, 370, 396, 198, 13, 437, 827, 372, 549, 397, 830],
       "name": "Sandisk",
       "type": "bar",
       "orientation": "h"
@@ -581,7 +721,7 @@ For every card, this shows the slowest speed of all runs of the subtest.
   },
   "data": [
     {
-      "x": [302, 422, 598, 409, 201, 13, 645, 831, 517, 557, 648, 803],
+      "x": [214, 375, 214, 365, 197, 12, 216, 818, 216, 542, 216, 813],
       "name": "Sandisk",
       "type": "bar",
       "orientation": "h"
@@ -642,7 +782,7 @@ For every card, this shows the fastest speed of all runs of the subtest.
   },
   "data": [
     {
-      "x": [662, 423, 657, 413, 201, 13, 653, 836, 520, 559, 650, 834],
+      "x": [657, 422, 642, 409, 200, 15, 654, 835, 523, 557, 641, 836],
       "name": "Sandisk",
       "type": "bar",
       "orientation": "h"
@@ -679,14 +819,8 @@ For every card, this shows the fastest speed of all runs of the subtest.
 All cards are very close in performance and nowhere near saturating the PCIe
 interface. The ADATA usually seems to be slightly faster than the Lexar. Looking
 at the [Comparison Of Bests](#comparison-of-bests), the Sandisk seems to be WAY
-faster in some cases, but further tests are needed to see if that holds on
-average. If it does, I'd probably recommend the Sandisk. But with numbers that
-close, you should probably just use the one you think lasts the longest or the
-one which has the best warranty.
-
-What I find most suspicious is that `RND4K Q1T1 Read`s are so low for the
-Sandisk card. It may just be a fluke due to the low number of tests though, so
-it needs more testing.
+faster in some cases, but with numbers that close, you should probably just use
+the one you think lasts the longest or the one which has the best warranty.
 
 ## Nintendo Switch 2
 
