@@ -1,10 +1,17 @@
 {{- $inline := .Get "inline" | default false -}}
+{{- $data := .Get "data" | default "" -}}
 
 {{ $inline_style := "" }}
 {{- if $inline }}
   {{- $inline_style = "display: inline-block" -}}
 {{- end }}
 
+{{- if ne "$data" "" }}
+<a href="{{ .Get "src" }}" data-fancybox="{{ $data }}" data-caption="{{ .Get "caption" }}" style="color:transparent;">
+  <img src="{{ .Get "src" }}" style="max-height: 50vh; {{ $inline_style }}" />
+</a>
+{{- else }}
 <a href="{{ .Get "src" }}" data-fancybox data-caption="{{ .Get "caption" }}" style="color:transparent;">
   <img src="{{ .Get "src" }}" style="max-height: 50vh; {{ $inline_style }}" />
 </a>
+{{- end }}
