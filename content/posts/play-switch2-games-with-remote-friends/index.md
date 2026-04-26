@@ -579,6 +579,8 @@ adds at least 13ms of latency.
 So there you have it, after doing over 200 latency tests and fixing 3 bugs in
 other projects, I can finally play tennis 🎾.
 
+The code is available on [GitHub](https://github.com/M1cha/sunshine-capture-buildroot).
+
 ## Let's have some fun
 
 Being able to play Switch 2 games via Moonlight means that I can play them
